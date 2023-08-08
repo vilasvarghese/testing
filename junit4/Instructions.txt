@@ -1,0 +1,20 @@
+1. Create new maven project
+	group: junit4
+	artifact: junit4
+	package: com.junit4
+	
+	Finish
+	
+2. Add in pom.xml
+
+	<dependency>
+		<groupId>junit</groupId>
+		<artifactId>junit</artifactId>
+		<version>4.12</version>
+		<scope>test</scope>
+	</dependency>
+
+
+3. Add Calculator.java 
+4. Add CalculatorTest.java
+5. Right click on the project and execute as Junit Test

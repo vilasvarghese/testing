@@ -1,0 +1,353 @@
+Continuous Testing with Selenium
+---------------------------------------------------------------------------
+https://github.com/vilasvarghese/JUnitIn28Minutes
+https://github.com/vilasvarghese/BashShellScriptingTutorials
+https://github.com/vilasvarghese/automation-testing-with-java-and-selenium
+
+
+	• Overview of Continuous Testing
+	---------------------------------------------------------------------------
+	Continuous Testing is an essential practice in the software development and DevOps lifecycle that aims to ensure the quality, reliability, and performance of software applications throughout their development and deployment process. It is a natural extension of continuous integration and continuous delivery (CI/CD) methodologies, where code changes are automatically integrated, tested, and deployed to production environments.
+
+The main goal of Continuous Testing is to provide early and frequent feedback on the quality of the software being developed, enabling rapid identification and resolution of defects. By automating the testing process and making it an integral part of the development pipeline, teams can deliver software faster, more reliably, and with higher quality. Here's an overview of the key aspects of Continuous Testing:
+
+    Automated Testing: 
+		Continuous Testing heavily relies on automation to execute a comprehensive suite of tests, including unit tests, integration tests, functional tests, performance tests, security tests, and more. Automation ensures that tests can be executed quickly, consistently, and with minimal human intervention.
+
+    Early and Frequent Testing: 
+		Tests are run continuously and consistently throughout the development process, starting from the very beginning when code changes are committed. This allows developers to catch and fix defects early in the development cycle, reducing the cost and effort required for bug fixes.
+
+    Parallel Testing: 
+		To speed up the testing process, Continuous Testing often leverages parallel execution of test cases across multiple environments and platforms simultaneously. This ensures that a wide range of test scenarios can be executed in a short time frame.
+
+    Immediate Feedback: 
+		Continuous Testing provides immediate feedback to developers after every code commit or merge. This real-time feedback loop helps developers identify issues quickly and enables them to iterate rapidly.
+
+    Integration with CI/CD Pipeline: 
+		Continuous Testing is integrated into the CI/CD pipeline, where automated tests are triggered automatically upon code changes, ensuring that only well-tested and verified code reaches production.
+
+    End-to-End Testing: 
+		Continuous Testing involves testing the entire application stack, including the frontend, backend, databases, APIs, and third-party integrations. This comprehensive approach ensures that all components work harmoniously together.
+
+    Shift-Left Testing: 
+		Continuous Testing promotes the concept of "Shift-Left," meaning testing activities are moved earlier in the development process. Developers actively participate in writing automated tests and take ownership of quality.
+
+    Continuous Monitoring: 
+		Beyond the development cycle, Continuous Testing incorporates continuous monitoring of production applications. This helps detect any issues in the live environment, leading to continuous improvement.
+
+    Cross-Team Collaboration: 
+		Continuous Testing encourages collaboration between development, testing, and operations teams. All team members are responsible for quality, and they work together to ensure the success of the continuous testing process.
+
+Continuous Testing is a crucial enabler for delivering high-quality software at a fast pace, providing developers and organizations with the confidence to deploy updates frequently, leading to better customer satisfaction and a competitive edge in the market.
+	
+	---------------------------------------------------------------------------
+	• Software Testing Life Cycle
+	---------------------------------------------------------------------------
+	The Software Testing Life Cycle (STLC) is a systematic approach to testing software applications throughout their development process. It involves a series of well-defined phases and activities aimed at ensuring the quality and reliability of the software product before it is released to users. The STLC typically consists of the following phases:
+
+    Requirement Analysis: In this phase, testers carefully review the project's requirements and specifications to understand what needs to be tested. They collaborate with stakeholders to clarify ambiguities and gather information needed for testing.
+
+    Test Planning: Test planning involves creating a detailed test plan that outlines the testing approach, objectives, scope, test environments, test schedules, and resources required for the testing process. This plan acts as a roadmap for the testing team.
+
+    Test Case Design: Testers create test cases based on the requirements and test plan. Test cases are specific scenarios and steps that need to be executed to validate various aspects of the software.
+
+    Test Environment Setup: The testing team sets up the required test environments, including hardware, software, network configurations, and test data. The test environment should mimic the production environment as closely as possible.
+
+    Test Execution: During this phase, the test cases are executed, and the software is tested against various test scenarios. Testers record the test results and any defects found during testing.
+
+    Defect Reporting and Tracking: When defects are found, they are documented in detail with all relevant information. The defects are then reported to the development team for resolution. A defect tracking system is used to monitor the progress of defect resolution.
+
+    Test Reporting: Test reporting involves generating and sharing test summary reports, which include the test execution status, defect summary, and other relevant metrics. These reports provide a clear picture of the software's quality.
+
+    Test Closure: In this final phase, the testing team evaluates the overall testing process, assesses the effectiveness of testing efforts, and identifies areas of improvement for future projects. Test closure involves documenting the lessons learned during the testing process.
+
+It's important to note that the STLC is not a linear process. It can be iterative, meaning that testing cycles may be repeated to ensure that defects are fixed and the software meets the required quality standards. Additionally, the STLC may be adapted to suit the specific needs of the project and the development methodology used (e.g., Waterfall, Agile, or DevOps).
+
+The STLC ensures that the software is thoroughly tested, meets the intended requirements, and is ready for deployment, thereby reducing the risk of defects and providing a reliable and high-quality product to end-users.
+
+	
+	---------------------------------------------------------------------------
+	• Different Types of Testing
+	---------------------------------------------------------------------------
+	
+	Software testing involves various types of testing techniques, each designed to focus on specific aspects of the software application. These testing types can be broadly categorized as follows:
+
+    Unit Testing: This is the smallest level of testing, where individual units or components of the software are tested in isolation to ensure they work correctly. It helps identify and fix defects in code early in the development process.
+
+    Integration Testing: Integration testing verifies the interactions and interfaces between different units or modules of the software. The goal is to identify defects that may arise due to the integration of multiple components.
+
+    Functional Testing: Functional testing ensures that the software functions according to its intended specifications and requirements. It involves testing various functionalities, user actions, and data inputs to check if the system behaves as expected.
+
+    System Testing: System testing evaluates the complete system as a whole, including all integrated components. The objective is to validate that the software meets the specified requirements and works as expected in its target environment.
+
+    Acceptance Testing: Acceptance testing involves testing the software with real end-users or stakeholders to determine if it meets their acceptance criteria. It includes User Acceptance Testing (UAT), where users validate the software's functionality from their perspective.
+
+    Regression Testing: Regression testing ensures that new code changes or modifications do not negatively impact existing functionalities. It involves retesting the software after each change to catch any unexpected side effects.
+
+    Performance Testing: Performance testing evaluates the software's responsiveness, speed, stability, and scalability under different load conditions. It helps identify performance bottlenecks and ensures the application can handle expected user traffic.
+
+    Security Testing: Security testing checks for vulnerabilities and weaknesses in the software to prevent potential security breaches. It includes testing for authentication, authorization, data protection, and other security aspects.
+
+    Usability Testing: Usability testing assesses the software's user-friendliness and how well it aligns with the user's needs and expectations. It focuses on the overall user experience.
+
+    Compatibility Testing: Compatibility testing ensures that the software works as intended across various devices, operating systems, browsers, and network configurations.
+
+    Localization Testing: Localization testing validates the software's functionality and linguistic accuracy for a specific target locale or language.
+
+    Accessibility Testing: Accessibility testing ensures that the software can be used by people with disabilities, adhering to accessibility standards and guidelines.
+
+    Exploratory Testing: Exploratory testing is an unscripted testing approach where testers explore the software to identify defects and learn more about its behavior.
+
+Each type of testing serves a specific purpose and contributes to ensuring the overall quality, reliability, and user satisfaction of the software application. Testing is an iterative and continuous process that evolves throughout the software development life cycle. The selection of testing types depends on project requirements, objectives, and the nature of the application being tested.
+	
+	---------------------------------------------------------------------------
+	• Test-Driven Development Approach using Junit
+	---------------------------------------------------------------------------
+	
+	Test-Driven Development (TDD) is a software development approach where developers write automated tests before writing the actual code. The TDD process follows a simple and iterative cycle of writing tests, implementing code to pass those tests, and then refactoring the code for better design and maintainability. JUnit is a popular testing framework for Java that is commonly used to implement TDD.
+
+Here's an overview of the Test-Driven Development (TDD) approach using JUnit:
+
+    Write a Test Case (Red): The TDD cycle begins by writing a test case for a small piece of functionality that is yet to be implemented. This test case is expected to fail initially because the corresponding code to make it pass does not exist yet.
+
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import org.junit.jupiter.api.Test;
+
+public class MyMathTest {
+
+    @Test
+    public void testAddition() {
+        int result = MyMath.add(2, 3);
+        assertEquals(5, result);
+    }
+}
+
+    Implement the Code (Green): Once the test case is written, the developer writes the minimum code necessary to make the test pass. The focus is not on writing the entire functionality but only on passing the test.
+
+java
+
+public class MyMath {
+
+    public static int add(int a, int b) {
+        return a + b;
+    }
+}
+
+    Run the Test: The JUnit framework is used to run the test case. Initially, the test will fail since the functionality has not been implemented.
+
+    Refactor (if necessary): After the test passes, the developer can refactor the code to improve its design, readability, and maintainability. The goal is to ensure that all tests continue to pass during refactoring.
+
+    Repeat for Additional Features: To add new functionality or make changes, the developer starts by writing a new test case for the desired feature. This new test should fail initially, and the developer follows the cycle again to implement the feature and make the test pass.
+
+The TDD approach encourages developers to write test cases that closely represent the desired behavior of the software. By doing so, developers gain confidence in their code, ensuring that new features do not break existing functionality. TDD promotes a more reliable and robust codebase, as well as easier maintenance and refactoring since tests act as a safety net.
+
+Overall, TDD using JUnit is a powerful methodology that fosters a test-first mindset and leads to higher code quality, better design decisions, and ultimately, a more stable and maintainable software product.
+	
+	---------------------------------------------------------------------------
+	• Overview of Selenium, features, benefits
+	---------------------------------------------------------------------------
+	
+	Selenium is an open-source automation testing framework widely used for automating web applications across different browsers and platforms. It allows testers and developers to write scripts in various programming languages to interact with web elements, simulate user actions, and validate the behavior of web applications. Selenium is highly popular in the software testing community due to its flexibility, ease of use, and cross-browser compatibility. Here's an overview of Selenium, its features, and benefits:
+
+Features of Selenium:
+
+    Browser Compatibility: Selenium supports multiple web browsers, including Chrome, Firefox, Internet Explorer, Edge, Safari, and Opera. This enables cross-browser testing, ensuring that web applications work consistently across different browsers.
+
+    Language Support: Selenium offers support for multiple programming languages, such as Java, Python, C#, Ruby, and JavaScript, allowing testers to choose their preferred language for test automation.
+
+    Locators: Selenium provides various locators (e.g., ID, Name, XPath, CSS selector) to identify web elements on a web page, making it easier to interact with these elements during test automation.
+
+    Parallel Testing: Selenium allows running tests in parallel across multiple browsers, enabling faster execution and reducing testing time.
+
+    Integration: Selenium seamlessly integrates with Continuous Integration (CI) tools like Jenkins, Bamboo, and TeamCity, enabling automated test execution as part of the CI/CD pipeline.
+
+    Support for Testing Frameworks: Selenium can work with popular testing frameworks like TestNG and JUnit, providing features like test grouping, dependency management, and test reporting.
+
+    Flexibility: Selenium can be used for automating functional, regression, and performance testing of web applications.
+
+    Community and Support: Selenium has a vast and active community, providing extensive documentation, tutorials, and forums where users can seek help and share knowledge.
+
+Benefits of Selenium:
+
+    Open Source: Selenium is freely available, which reduces the cost of test automation, making it a popular choice for both small and large organizations.
+
+    Cross-Browser Testing: With Selenium's cross-browser support, testers can validate web applications on various browsers, ensuring consistent behavior across different environments.
+
+    Reusable Test Scripts: Selenium's modular approach allows testers to create reusable test scripts, reducing duplication of effort and improving maintainability.
+
+    Fast Feedback: Selenium's automation capabilities enable quick execution of test cases, providing fast feedback on the quality of the application.
+
+    Wide Adoption: Selenium is widely used in the industry, making it a valuable skill for testers and developers, and contributing to a vast collection of resources and best practices.
+
+    Integration with Test Management Tools: Selenium can be integrated with various test management tools, making it easier to manage test cases and test execution.
+
+    Supports Various Platforms: Selenium supports testing on different operating systems, making it suitable for testing web applications across diverse environments.
+
+In conclusion, Selenium is a powerful automation testing framework that offers various features and benefits, making it a popular choice for web application testing. Its cross-browser compatibility, language support, and ease of integration with CI tools contribute to its widespread adoption among testers and developers worldwide.
+
+	
+	---------------------------------------------------------------------------
+	• Testing Web Application using Selenium
+	---------------------------------------------------------------------------
+	
+	Testing web applications using Selenium involves automating the process of interacting with web elements, performing user actions, and verifying expected behaviors. Selenium provides a suite of tools that allow testers to write test scripts in various programming languages to conduct web application testing efficiently. Here's an overview of the steps involved in testing a web application using Selenium:
+
+    Setup Selenium WebDriver:
+        Download the appropriate WebDriver for the browser you want to test (e.g., ChromeDriver for Chrome, GeckoDriver for Firefox).
+        Set up the WebDriver executable in your test environment.
+
+    Choose a Programming Language:
+        Choose a programming language supported by Selenium (e.g., Java, Python, C#, Ruby) to write test scripts.
+
+    Create a Test Project:
+        Set up a project for your test automation. This project will contain test scripts, configuration files, and other resources needed for testing.
+
+    Identify Web Elements:
+        Use various locators (e.g., ID, Name, XPath, CSS selector) to identify web elements on the web page you want to interact with during testing.
+
+    Write Test Scripts:
+        Using the chosen programming language and the Selenium WebDriver API, write test scripts to perform actions on the web application (e.g., click buttons, enter data, submit forms).
+
+    Execute Test Cases:
+        Run the test scripts against the web application using the WebDriver and observe the automated interactions.
+
+    Verify Expected Behaviors:
+        Use assertions or verifications to check whether the web application behaves as expected. Verify that specific elements are displayed correctly, that data is accurate, and that navigation works as intended.
+
+    Handle Waits and Synchronization:
+        Implement wait mechanisms to handle dynamic web elements or situations where the web application takes time to load.
+
+    Parallel Execution (Optional):
+        For faster testing, consider running test scripts in parallel on multiple browsers or platforms.
+
+    Generate Test Reports:
+
+    Use testing frameworks like TestNG or JUnit to generate test reports with pass/fail results and other statistics.
+
+    Continuous Integration (Optional):
+
+    Integrate Selenium tests into your Continuous Integration (CI) pipeline to automate test execution on each code commit.
+
+    Maintain and Update Test Scripts:
+
+    As the web application evolves, update the test scripts accordingly to accommodate changes in the application's user interface or functionality.
+
+By following these steps, testers can ensure that their web applications are thoroughly tested, free from defects, and deliver a positive user experience. Selenium's flexibility and wide adoption make it a popular choice for web application testing, enabling QA teams to achieve test automation efficiently and effectively.
+	
+	---------------------------------------------------------------------------	
+	• Generating Reports using TestNG
+	---------------------------------------------------------------------------
+	
+	TestNG (Test Next Generation) is a popular testing framework for Java that provides various features and functionalities for writing and executing test cases. One of the essential features of TestNG is its ability to generate detailed and customizable test reports, providing insights into the test execution and results. TestNG generates HTML-based reports by default, but it also supports other report formats like XML, JSON, and custom formats. Here's how to generate reports using TestNG:
+
+    Configure TestNG: Make sure you have TestNG properly configured in your Java project. If you are using Maven, add the TestNG dependency to your pom.xml file.
+
+    Write Test Cases: Create your test classes and test methods using TestNG annotations such as @Test, @BeforeMethod, @AfterMethod, etc. These annotations define the test flow and setup/teardown methods.
+
+    Run TestNG Suite: Right-click on your testng.xml file (if you have one) or your test class and select "Run as TestNG Suite." Alternatively, you can run TestNG programmatically using TestNG APIs.
+
+    Generate Reports: After test execution, TestNG will automatically generate an HTML report by default. The report will be created in the "test-output" folder in your project directory.
+
+    View the Report: Open the generated HTML report in a web browser to view the test execution summary, passed and failed test cases, time taken for each test, and other relevant details.
+
+    Customize Reports (Optional): TestNG allows you to customize the report generation process. You can use listeners, reporters, and configuration options to generate customized reports as per your requirements.
+
+To generate reports in different formats (XML, JSON, etc.) or to integrate TestNG with other tools, you can use TestNG listeners and reporters. For example:
+
+    To generate an XML report, you can use the org.testng.reporters.XMLReporter listener.
+    To generate a JSON report, you can use the org.testng.reporters.JUnitXMLReporter listener.
+    To create a custom report, you can implement the org.testng.IReporter interface and override the generateReport() method.
+
+Here's an example of how to use a TestNG listener to generate an XML report:
+
+java
+
+import org.testng.annotations.Listeners;
+import org.testng.annotations.Test;
+
+@Listeners(org.testng.reporters.XMLReporter.class)
+public class MyTestNGTestClass {
+
+    @Test
+    public void testMethod1() {
+        // Test code here
+    }
+
+    @Test
+    public void testMethod2() {
+        // Test code here
+    }
+}
+
+By adding the @Listeners annotation to the test class and specifying the reporter class (e.g., org.testng.reporters.XMLReporter.class), TestNG will generate the XML report in addition to the default HTML report.
+
+Customizing and generating reports using TestNG provides valuable insights into test execution, test results, and any potential issues encountered during testing. These reports aid in analyzing test coverage, identifying failed test cases, and tracking the overall progress of your test suite.
+	
+	---------------------------------------------------------------------------
+Practical Includes :
+	1. Configuring Selenium and web drivers
+	---------------------------------------------------------------------------
+		https://www.javatpoint.com/selenium-maven
+		
+		changes made.
+		1. downloaded the chromedriver from https://chromedriver.storage.googleapis.com/index.html?path=114.0.5735.90/
+		2. Changed the path in the java code to 
+			D:\\chrome\\chromedriver_win32\\chromedriver.exe
+		3. Extended MavenTest1 with "extends TestCase"
+		4. Instead of right click on "MavenTest1"
+			right clicked project and ran as Junit test
+	---------------------------------------------------------------------------	
+	2. Writing Selenium Testcases and executing them.
+	---------------------------------------------------------------------------
+	---------------------------------------------------------------------------	
+	3. Test driven development using Junit
+	---------------------------------------------------------------------------
+	https://www.javaguides.net/2018/07/junit-getting-started-guide.html
+	https://www.digitalocean.com/community/tutorials/junit-setup-maven
+
+	D:\PraiseTheLord\HSBGInfotech\Others\vilas\testing\junit4
+	
+	---------------------------------------------------------------------------	
+	4. Exporting Selenium Test Application as Runnable Jar.
+	---------------------------------------------------------------------------
+	
+	Refer: https://support.smartbear.com/alertsite/docs/monitors/web/selenium/create-runnable-jar-from-selenium-script-using-eclipse.html
+	
+	Export using Eclipse, assuming you have a Selenium test project set up in Eclipse:
+
+    Create a Runnable Class: 
+		Make sure your Selenium test project has a main class that can be executed as the entry point of your application.
+
+    Build the Project: 
+		Before exporting, make sure your project is properly built. Right-click on your project in the Package Explorer, and select "Build Project" if necessary.
+
+    Export as Runnable JAR:
+        Right-click on your project in the Package Explorer.
+        Go to "Export..."
+        In the Export dialog, expand the "Java" category and select "Runnable JAR file". Click "Next".
+
+    Select Launch Configuration: In the "Runnable JAR File Export" dialog:
+        Choose the launch configuration that corresponds to your main class.
+        Choose the export destination directory.
+        Select the option to "Extract required libraries into generated JAR".
+        Choose "Package required libraries into generated JAR" or "Copy required libraries into a sub-folder next to the generated JAR" based on your preference.
+
+    Choose Library Handling: Depending on your choice in the previous step:
+        If you chose to package libraries into the JAR, they will be included directly in the JAR file.
+        If you chose to copy libraries to a sub-folder, make sure that sub-folder is distributed along with the JAR when you deploy it.
+
+    Finish: Click "Finish" to complete the export process.
+
+Now, you should have a runnable JAR file that includes your Selenium test application along with its dependencies. You can run the JAR using the command:
+
+bash
+
+java -jar YourJarFileName.jar
+
+Please note that Selenium tests might require a web browser driver executable (like ChromeDriver or GeckoDriver). Make sure you include the driver executable(s) in your project and configure the paths correctly in your Selenium code. When exporting the JAR, ensure that the driver executable(s) are packaged or placed correctly alongside the JAR file.
+	
+	---------------------------------------------------------------------------
+	5. Generating reports using TestNG
+	---------------------------------------------------------------------------
+	---------------------------------------------------------------------------	
