@@ -45,21 +45,29 @@ Continuous Testing is a crucial enabler for delivering high-quality software at 
 	---------------------------------------------------------------------------
 	The Software Testing Life Cycle (STLC) is a systematic approach to testing software applications throughout their development process. It involves a series of well-defined phases and activities aimed at ensuring the quality and reliability of the software product before it is released to users. The STLC typically consists of the following phases:
 
-    Requirement Analysis: In this phase, testers carefully review the project's requirements and specifications to understand what needs to be tested. They collaborate with stakeholders to clarify ambiguities and gather information needed for testing.
+    Requirement Analysis: 
+		In this phase, testers carefully review the project's requirements and specifications to understand what needs to be tested. They collaborate with stakeholders to clarify ambiguities and gather information needed for testing.
 
-    Test Planning: Test planning involves creating a detailed test plan that outlines the testing approach, objectives, scope, test environments, test schedules, and resources required for the testing process. This plan acts as a roadmap for the testing team.
+    Test Planning: 
+		Test planning involves creating a detailed test plan that outlines the testing approach, objectives, scope, test environments, test schedules, and resources required for the testing process. This plan acts as a roadmap for the testing team.
 
-    Test Case Design: Testers create test cases based on the requirements and test plan. Test cases are specific scenarios and steps that need to be executed to validate various aspects of the software.
+    Test Case Design: 
+		Testers create test cases based on the requirements and test plan. Test cases are specific scenarios and steps that need to be executed to validate various aspects of the software.
 
-    Test Environment Setup: The testing team sets up the required test environments, including hardware, software, network configurations, and test data. The test environment should mimic the production environment as closely as possible.
+    Test Environment Setup: 
+		The testing team sets up the required test environments, including hardware, software, network configurations, and test data. The test environment should mimic the production environment as closely as possible.
 
-    Test Execution: During this phase, the test cases are executed, and the software is tested against various test scenarios. Testers record the test results and any defects found during testing.
+    Test Execution: 
+		During this phase, the test cases are executed, and the software is tested against various test scenarios. Testers record the test results and any defects found during testing.
 
-    Defect Reporting and Tracking: When defects are found, they are documented in detail with all relevant information. The defects are then reported to the development team for resolution. A defect tracking system is used to monitor the progress of defect resolution.
+    Defect Reporting and Tracking: 
+		When defects are found, they are documented in detail with all relevant information. The defects are then reported to the development team for resolution. A defect tracking system is used to monitor the progress of defect resolution.
 
-    Test Reporting: Test reporting involves generating and sharing test summary reports, which include the test execution status, defect summary, and other relevant metrics. These reports provide a clear picture of the software's quality.
+    Test Reporting: 
+		Test reporting involves generating and sharing test summary reports, which include the test execution status, defect summary, and other relevant metrics. These reports provide a clear picture of the software's quality.
 
-    Test Closure: In this final phase, the testing team evaluates the overall testing process, assesses the effectiveness of testing efforts, and identifies areas of improvement for future projects. Test closure involves documenting the lessons learned during the testing process.
+    Test Closure: 
+		In this final phase, the testing team evaluates the overall testing process, assesses the effectiveness of testing efforts, and identifies areas of improvement for future projects. Test closure involves documenting the lessons learned during the testing process.
 
 It's important to note that the STLC is not a linear process. It can be iterative, meaning that testing cycles may be repeated to ensure that defects are fixed and the software meets the required quality standards. Additionally, the STLC may be adapted to suit the specific needs of the project and the development methodology used (e.g., Waterfall, Agile, or DevOps).
 
@@ -72,13 +80,17 @@ The STLC ensures that the software is thoroughly tested, meets the intended requ
 	
 	Software testing involves various types of testing techniques, each designed to focus on specific aspects of the software application. These testing types can be broadly categorized as follows:
 
-    Unit Testing: This is the smallest level of testing, where individual units or components of the software are tested in isolation to ensure they work correctly. It helps identify and fix defects in code early in the development process.
+    Unit Testing: 
+		This is the smallest level of testing, where individual units or components of the software are tested in isolation to ensure they work correctly. It helps identify and fix defects in code early in the development process.
 
-    Integration Testing: Integration testing verifies the interactions and interfaces between different units or modules of the software. The goal is to identify defects that may arise due to the integration of multiple components.
+    Integration Testing: 
+		Integration testing verifies the interactions and interfaces between different units or modules of the software. The goal is to identify defects that may arise due to the integration of multiple components.
 
-    Functional Testing: Functional testing ensures that the software functions according to its intended specifications and requirements. It involves testing various functionalities, user actions, and data inputs to check if the system behaves as expected.
+    Functional Testing: 
+		Functional testing ensures that the software functions according to its intended specifications and requirements. It involves testing various functionalities, user actions, and data inputs to check if the system behaves as expected.
 
-    System Testing: System testing evaluates the complete system as a whole, including all integrated components. The objective is to validate that the software meets the specified requirements and works as expected in its target environment.
+    System Testing: 
+		System testing evaluates the complete system as a whole, including all integrated components. The objective is to validate that the software meets the specified requirements and works as expected in its target environment.
 
     Acceptance Testing: Acceptance testing involves testing the software with real end-users or stakeholders to determine if it meets their acceptance criteria. It includes User Acceptance Testing (UAT), where users validate the software's functionality from their perspective.
 
@@ -125,7 +137,6 @@ public class MyMathTest {
 
     Implement the Code (Green): Once the test case is written, the developer writes the minimum code necessary to make the test pass. The focus is not on writing the entire functionality but only on passing the test.
 
-java
 
 public class MyMath {
 
@@ -152,7 +163,14 @@ Overall, TDD using JUnit is a powerful methodology that fosters a test-first min
 
 Features of Selenium:
 
-    Browser Compatibility: Selenium supports multiple web browsers, including Chrome, Firefox, Internet Explorer, Edge, Safari, and Opera. This enables cross-browser testing, ensuring that web applications work consistently across different browsers.
+    Browser Compatibility: Selenium supports multiple web browsers, including 
+		Chrome, 
+		Firefox, 
+		Internet Explorer, 
+		Edge,
+		Safari, and 
+		Opera. 
+		This enables cross-browser testing, ensuring that web applications work consistently across different browsers.
 
     Language Support: Selenium offers support for multiple programming languages, such as Java, Python, C#, Ruby, and JavaScript, allowing testers to choose their preferred language for test automation.
 
@@ -239,7 +257,30 @@ By following these steps, testers can ensure that their web applications are tho
 	• Generating Reports using TestNG
 	---------------------------------------------------------------------------
 	
-	TestNG (Test Next Generation) is a popular testing framework for Java that provides various features and functionalities for writing and executing test cases. One of the essential features of TestNG is its ability to generate detailed and customizable test reports, providing insights into the test execution and results. TestNG generates HTML-based reports by default, but it also supports other report formats like XML, JSON, and custom formats. Here's how to generate reports using TestNG:
+	TestNG (Test Next Generation) 
+		popular testing framework for Java 
+		provides various features and functionalities for 
+			writing and executing test cases. 
+		Supports TDD (Test driven development)
+		Why TestNG
+			1. Generate detailed and customizable test reports
+				provide insights into the test execution and results. 
+			TestNG generates HTML-based reports by default
+				supports other report formats 
+					XML, 
+					JSON, and 
+					custom formats. 
+			2. Annotation support
+			3. Priorities/sequence 
+				sequence of test execution
+			4. Inter-test Dependency managemnet
+			5. Group of test cases
+			6. Data provider for tests.
+	
+
+
+	
+	To generate reports using TestNG:
 
     Configure TestNG: Make sure you have TestNG properly configured in your Java project. If you are using Maven, add the TestNG dependency to your pom.xml file.
 
@@ -261,7 +302,6 @@ To generate reports in different formats (XML, JSON, etc.) or to integrate TestN
 
 Here's an example of how to use a TestNG listener to generate an XML report:
 
-java
 
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
@@ -350,4 +390,25 @@ Please note that Selenium tests might require a web browser driver executable (l
 	---------------------------------------------------------------------------
 	5. Generating reports using TestNG
 	---------------------------------------------------------------------------
+	
+	Installation 		
+		https://testng.org/doc/download.html
+		Follow market place installation
+		
+	Reference: https://testng.org/doc/eclipse.html#eclipse-installation
+	
+	Usage
+		https://testng.org/doc/eclipse.html
+		
+	Right click on test and execute it as TestNG Test.
+
+	TestNG automatically generates 
+		- Default Reports
+		- HTML Reports
+		- Emmalable Reports 
+
+	
+	
+	
+	
 	---------------------------------------------------------------------------	
