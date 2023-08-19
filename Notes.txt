@@ -208,7 +208,8 @@ Benefits of Selenium:
 
 In conclusion, Selenium is a powerful automation testing framework that offers various features and benefits, making it a popular choice for web application testing. Its cross-browser compatibility, language support, and ease of integration with CI tools contribute to its widespread adoption among testers and developers worldwide.
 
-	
+
+
 	---------------------------------------------------------------------------
 	• Testing Web Application using Selenium
 	---------------------------------------------------------------------------
@@ -281,6 +282,7 @@ By following these steps, testers can ensure that their web applications are tho
 			5. Group of test cases
 			6. Data provider for tests.
 	
+
 
 
 	
