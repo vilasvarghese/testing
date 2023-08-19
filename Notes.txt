@@ -170,6 +170,7 @@ Features of Selenium:
 		Edge,
 		Safari, and 
 		Opera. 
+		
 		This enables cross-browser testing, ensuring that web applications work consistently across different browsers.
 
     Language Support: Selenium offers support for multiple programming languages, such as Java, Python, C#, Ruby, and JavaScript, allowing testers to choose their preferred language for test automation.
@@ -188,7 +189,8 @@ Features of Selenium:
 
 Benefits of Selenium:
 
-    Open Source: Selenium is freely available, which reduces the cost of test automation, making it a popular choice for both small and large organizations.
+    Open Source: 
+		Selenium is freely available, which reduces the cost of test automation, making it a popular choice for both small and large organizations.
 
     Cross-Browser Testing: With Selenium's cross-browser support, testers can validate web applications on various browsers, ensuring consistent behavior across different environments.
 
@@ -196,7 +198,9 @@ Benefits of Selenium:
 
     Fast Feedback: Selenium's automation capabilities enable quick execution of test cases, providing fast feedback on the quality of the application.
 
-    Wide Adoption: Selenium is widely used in the industry, making it a valuable skill for testers and developers, and contributing to a vast collection of resources and best practices.
+    Wide Adoption: 
+		Most widely used test framework.
+		Selenium is widely used in the industry, making it a valuable skill for testers and developers, and contributing to a vast collection of resources and best practices.
 
     Integration with Test Management Tools: Selenium can be integrated with various test management tools, making it easier to manage test cases and test execution.
 
@@ -323,6 +327,9 @@ public class MyTestNGTestClass {
 By adding the @Listeners annotation to the test class and specifying the reporter class (e.g., org.testng.reporters.XMLReporter.class), TestNG will generate the XML report in addition to the default HTML report.
 
 Customizing and generating reports using TestNG provides valuable insights into test execution, test results, and any potential issues encountered during testing. These reports aid in analyzing test coverage, identifying failed test cases, and tracking the overall progress of your test suite.
+	
+	
+
 	
 	---------------------------------------------------------------------------
 Practical Includes :
