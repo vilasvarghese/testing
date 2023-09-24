@@ -7,6 +7,12 @@
 	
 2. Add in pom.xml
 
+	<properties>
+		<maven.compiler.source>11</maven.compiler.source>
+		<maven.compiler.target>11</maven.compiler.target>
+	</properties>
+
+
 	<dependency>
 		<groupId>junit</groupId>
 		<artifactId>junit</artifactId>
@@ -18,3 +24,5 @@
 3. Add Calculator.java 
 4. Add CalculatorTest.java
 5. Right click on the project and execute as Junit Test
+
+

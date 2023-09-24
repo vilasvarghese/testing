@@ -1,6 +1,0 @@
-Manifest-Version: 1.0
-Built-By: vilas
-Build-Jdk: 18.0.2
-Main-Class: SeleniumProject.SeleniumProject.TestSuiteRunner
-Created-By: Maven Integration for Eclipse
-
