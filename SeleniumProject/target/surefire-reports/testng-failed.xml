@@ -3,13 +3,13 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
   <test thread-count="5" name="TestCases(failed)" verbose="0">
     <classes>
-      <class name="SeleniumProject.SeleniumProject.MavenTest1">
+      <class name="SeleniumProject.SeleniumProject.PolicyTest">
         <methods>
+          <include name="testGoogle"/>
           <include name="afterTest"/>
           <include name="beforeTest"/>
-          <include name="testGoogle"/>
         </methods>
-      </class> <!-- SeleniumProject.SeleniumProject.MavenTest1 -->
+      </class> <!-- SeleniumProject.SeleniumProject.PolicyTest -->
     </classes>
   </test> <!-- TestCases(failed) -->
 </suite> <!-- Failed suite [Suite] -->

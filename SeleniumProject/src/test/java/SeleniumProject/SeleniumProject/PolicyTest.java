@@ -10,13 +10,14 @@ import org.openqa.selenium.support.ui.Wait;
 import org.testng.annotations.AfterTest;  
 import org.testng.annotations.BeforeTest;  
 import org.testng.annotations.Test;
+import org.testng.Assert;
 
 import junit.framework.TestCase;  
 
-public class MavenTest1 extends TestCase{
+public class PolicyTest extends TestCase{
 	
 	//download chrom driver from https://googlechromelabs.github.io/chrome-for-testing/
-	public String baseUrl = "https://www.google.com/";  
+	public String baseUrl = "http://localhost:8080/seeddata";  
 	String driverPath = "D:\\chrome\\chromedriver-win64\\chromedriver.exe";  
 	
 	public WebDriver driver;
@@ -39,27 +40,33 @@ public class MavenTest1 extends TestCase{
 		
 		//get the title of the page  
 		String title = driver.getTitle();                  
-		System.out.println(title);  
+		System.out.println(title);
+		
+		
 		
 
         waitForMe(2000);
 		// Find the search input element
-        WebElement searchInput = driver.findElement(By.name("q"));
-
-        waitForMe(1000);
+        //WebElement searchInput = driver.findElement(By.name("q"));
+		WebElement e = driver.findElement(By.xpath("//*[text()='Data seeded successfully!!!']"));
+		System.out.println("Element with text(): [" + e.getText() +"]");
+		Assert.assertEquals("Data seeded successfully!!!", e.getText());
+		
+		driver.quit();
         
+		waitForMe(1000);
         // Enter search text
-        searchInput.sendKeys("vilas");
+        //searchInput.sendKeys("vilas");
 
-        waitForMe(1000);
+        //waitForMe(1000);
         
         // Submit the search form
-        searchInput.submit();
+        //searchInput.submit();
 
-        waitForMe(5000);
+        //waitForMe(5000);
 
         // Close the browser
-        driver.quit();
+        //driver.quit();
 	}   
 	
 	public void waitForMe(int time) {
@@ -77,7 +84,7 @@ public class MavenTest1 extends TestCase{
 	}     
 	@AfterTest  
 	public void afterTest() {  
-		driver.quit();  
+		//driver.quit();  
 		System.out.println("after test");  
 	}         	
 

@@ -1,4 +1,12 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 16.143 s - in TestSuite
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 58.809 s <<< FAILURE! - in TestSuite
+SeleniumProject.SeleniumProject.PolicyTest.testGoogle on null(SeleniumProject.SeleniumProject.PolicyTest)  Time elapsed: 55.053 s  <<< FAILURE!
+org.openqa.selenium.NoSuchSessionException: 
+Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-BUA2IBR3', ip: '192.168.56.1', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4'
+Driver info: driver.version: RemoteWebDriver
+	at SeleniumProject.SeleniumProject.PolicyTest.testGoogle(PolicyTest.java:58)
+
