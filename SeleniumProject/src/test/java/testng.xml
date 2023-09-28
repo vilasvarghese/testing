@@ -3,7 +3,7 @@
 <suite name="Suite">
   <test name= "TestCases">
     <classes>
-		<class name= "SeleniumProject.SeleniumProject.MavenTest1"/> 
+		<class name= "SeleniumProject.SeleniumProject.PolicyTest"/> 
     </classes>  
   </test>
 </suite> <!-- Suite -->
