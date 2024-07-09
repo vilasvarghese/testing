@@ -71,7 +71,7 @@ public class PolicyTest extends TestCase{
 	
 	
 	@Test             
-	public void testPositive() {      
+	public void testNegative() {      
 		// set the system property for Chrome driver      
 		System.out.println("inside testGoogle");
 		System.setProperty("webdriver.chrome.driver", driverPath);  
