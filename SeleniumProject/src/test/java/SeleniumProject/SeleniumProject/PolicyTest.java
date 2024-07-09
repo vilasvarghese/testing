@@ -23,7 +23,7 @@ public class PolicyTest extends TestCase{
 	public WebDriver driver;
 	
 	@Test             
-	public void testGoogle() {      
+	public void testPositive() {      
 		// set the system property for Chrome driver      
 		System.out.println("inside testGoogle");
 		System.setProperty("webdriver.chrome.driver", driverPath);  
@@ -69,6 +69,55 @@ public class PolicyTest extends TestCase{
         //driver.quit();
 	}   
 	
+	
+	@Test             
+	public void testPositive() {      
+		// set the system property for Chrome driver      
+		System.out.println("inside testGoogle");
+		System.setProperty("webdriver.chrome.driver", driverPath);  
+		System.out.println("inside testGoogle "+driverPath);
+		// Create driver object for CHROME browser  
+		driver = new ChromeDriver();  
+		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);  
+		driver.manage().window().maximize();  
+		driver.get(baseUrl);  
+		
+		// get the current URL of the page  
+		String URL= driver.getCurrentUrl();  
+		System.out.print(URL);  
+		
+		//get the title of the page  
+		String title = driver.getTitle();                  
+		System.out.println(title);
+		
+		
+		
+
+        waitForMe(2000);
+		// Find the search input element
+        //WebElement searchInput = driver.findElement(By.name("q"));
+		WebElement e = driver.findElement(By.xpath("//*[text()='Data seeded failed!!!']"));
+		System.out.println("Element with text(): [" + e.getText() +"]");
+		Assert.assertEquals("Data seeded failed!!!", e.getText());
+		
+		driver.quit();
+        
+		waitForMe(1000);
+        // Enter search text
+        //searchInput.sendKeys("vilas");
+
+        //waitForMe(1000);
+        
+        // Submit the search form
+        //searchInput.submit();
+
+        //waitForMe(5000);
+
+        // Close the browser
+        //driver.quit();
+	}   
+
+
 	public void waitForMe(int time) {
 		// Wait for a few seconds to see the results
         try {
