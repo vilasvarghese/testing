@@ -17,8 +17,8 @@ import junit.framework.TestCase;
 public class PolicyTest extends TestCase{
 	
 	//download chrom driver from https://googlechromelabs.github.io/chrome-for-testing/
-	public String baseUrl = "http://localhost:8080/seeddata";  
-	String driverPath = "D:\\chrome\\chromedriver-win64\\chromedriver.exe";  
+	public String baseUrl = "http://localhost:8081//seedData";  
+	String driverPath = "C:\\Users\\Administrator\\Downloads\\driver\\chromedriver-win64\\chromedriver.exe";  
 	
 	public WebDriver driver;
 	

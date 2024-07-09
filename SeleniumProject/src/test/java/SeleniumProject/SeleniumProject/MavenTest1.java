@@ -19,6 +19,8 @@ public class MavenTest1 extends TestCase{
 	public String baseUrl = "https://www.google.com/";  
 	String driverPath = "D:\\chrome\\chromedriver-win64\\chromedriver.exe";  
 	
+	
+	
 	public WebDriver driver;
 	
 	@Test             

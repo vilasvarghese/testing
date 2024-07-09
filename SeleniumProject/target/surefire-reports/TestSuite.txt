@@ -1,4 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 70.357 s - in TestSuite
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 1.418 s <<< FAILURE! - in TestSuite
+SeleniumProject.SeleniumProject.PolicyTest.testGoogle on null(SeleniumProject.SeleniumProject.PolicyTest)  Time elapsed: 0.269 s  <<< FAILURE!
+java.lang.IllegalStateException: The driver executable does not exist: C:\Users\Administrator\Downloads\driver\chromedriver-win64\chromedriver.exe
+	at SeleniumProject.SeleniumProject.PolicyTest.testGoogle(PolicyTest.java:32)
+
