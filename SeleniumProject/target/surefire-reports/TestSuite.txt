@@ -1,8 +1,17 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 1.418 s <<< FAILURE! - in TestSuite
-SeleniumProject.SeleniumProject.PolicyTest.testGoogle on null(SeleniumProject.SeleniumProject.PolicyTest)  Time elapsed: 0.269 s  <<< FAILURE!
-java.lang.IllegalStateException: The driver executable does not exist: C:\Users\Administrator\Downloads\driver\chromedriver-win64\chromedriver.exe
-	at SeleniumProject.SeleniumProject.PolicyTest.testGoogle(PolicyTest.java:32)
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 35.362 s <<< FAILURE! - in TestSuite
+SeleniumProject.SeleniumProject.PolicyTest.testToFail on null(SeleniumProject.SeleniumProject.PolicyTest)  Time elapsed: 25.835 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//*[text()='Data seeded failed!!!']"}
+  (Session info: chrome=126.0.6478.127)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-BUA2IBR3', ip: '192.168.56.1', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\vilas\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64909}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 10307fe35fb8118f8378f65a4dac4e86
+*** Element info: {Using=xpath, value=//*[text()='Data seeded failed!!!']}
+	at SeleniumProject.SeleniumProject.PolicyTest.testToFail(PolicyTest.java:99)
 

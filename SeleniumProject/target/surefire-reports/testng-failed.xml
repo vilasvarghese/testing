@@ -5,9 +5,9 @@
     <classes>
       <class name="SeleniumProject.SeleniumProject.PolicyTest">
         <methods>
-          <include name="testGoogle"/>
           <include name="afterTest"/>
           <include name="beforeTest"/>
+          <include name="testToFail"/>
         </methods>
       </class> <!-- SeleniumProject.SeleniumProject.PolicyTest -->
     </classes>
