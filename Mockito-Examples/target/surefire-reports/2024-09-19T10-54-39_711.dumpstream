@@ -1,0 +1,30 @@
+# Created at 2024-09-19T10:54:39.814
+WARNING: An illegal reflective access operation has occurred
+
+# Created at 2024-09-19T10:54:39.817
+WARNING: Illegal reflective access by org.mockito.internal.util.reflection.AccessibilityChanger (file:/C:/Users/vilas/.m2/repository/org/mockito/mockito-core/2.19.0/mockito-core-2.19.0.jar) to field java.util.ArrayList.elementData
+
+# Created at 2024-09-19T10:54:39.819
+WARNING: Please consider reporting this to the maintainers of org.mockito.internal.util.reflection.AccessibilityChanger
+
+# Created at 2024-09-19T10:54:39.822
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+
+# Created at 2024-09-19T10:54:39.824
+WARNING: All illegal access operations will be denied in a future release
+
+# Created at 2024-09-19T10:54:44.075
+WARNING: An illegal reflective access operation has occurred
+
+# Created at 2024-09-19T10:54:44.076
+WARNING: Illegal reflective access by org.mockito.internal.util.reflection.AccessibilityChanger (file:/C:/Users/vilas/.m2/repository/org/mockito/mockito-core/2.19.0/mockito-core-2.19.0.jar) to field java.util.ArrayList.elementData
+
+# Created at 2024-09-19T10:54:44.077
+WARNING: Please consider reporting this to the maintainers of org.mockito.internal.util.reflection.AccessibilityChanger
+
+# Created at 2024-09-19T10:54:44.078
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+
+# Created at 2024-09-19T10:54:44.079
+WARNING: All illegal access operations will be denied in a future release
+
